@@ -1,0 +1,60 @@
+body {
+    font-family:'Baloo Bhai', cursive;
+    background: #fdfdfd;
+    color: #252525
+  }
+  
+  nav {
+      
+      top: 0px; /*pour que la navbar se colle en haut */
+      height: 220px; /*pour que la navbar descende un peu*/
+      width: 100%; /*pour que la navbar prenne toute la largeur*/
+      display: flex; /*pour que tout s'aligne*/
+      align-items: center; /*pour que tout s'aligne, au centre) */
+      justify-content: space-around; /*pour avoir un épassement pour que les éléments ne soit pas collés) */
+  }
+  .logo {
+      width: 100px;
+  }
+  .nav-links {
+      
+      display: flex;      
+      justify-content: end;
+      width: 100%;
+      margin-right: 40px;
+  }
+  .nav-links li {
+      margin: 10px; /*écart entre les catégories*/
+      overflow: hidden; /*cacher le 2e élément qui sert au Responsive*/
+  }
+  .nav-links a {
+      text-decoration: none; /*enlever le surlignage et tout de l'hyperlien*/
+      /*position: relative; permet de pas voir les catégories quand l'écran se rétrécit*/
+      display: block;
+  }
+  .nav-links .categorie {
+      color: #ff9a17;
+      padding: 12px;
+      border-bottom: 3px solid transparent;
+      transition: border-bottom 0.3s;
+      font-size: 25px; /*taille de l'écriture (catégories)*/
+      font-weight: 300;
+  }
+  .nav-links .categorie:hover {
+      border-bottom: 3px solid black;
+      background-color: rgba(256,256,256,0.95);
+      color: #ff9a17;
+  }
+  .nav-icones {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .nav-links .nav-icones a {
+      color: #ff9a17;
+  }
+   
